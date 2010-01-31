@@ -1,8 +1,8 @@
 RECENT CHANGES
 ==============
-The dbd-jdbc project has recently moved to Kenai and can be found at the following url 
-(http://kenai.com/projects/dbd-jdbc).  Please report any bugs found to the issue 
-tracker listed on the Kenai project page.
+The dbd-jdbc project has recently moved to Github and can be found at the following url 
+(http://github.com/chadj/dbd-jdbc). Please report any bugs found to the issue 
+tracker on Github.
 
 OVERVIEW
 ========

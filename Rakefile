@@ -30,7 +30,7 @@ begin
   require 'hoe'
   Hoe.new("dbd-jdbc", "0.1.4") do |p|
     p.rubyforge_name = "jruby-extras"
-    p.url = "http://kenai.com/projects/dbd-jdbc"
+    p.url = "http://github.com/chadj/dbd-jdbc"
     p.author = "Chad Johnson"
     p.email = "chad.j.johnson@gmail.com"
     p.description = "A JDBC DBD driver for Ruby DBI"

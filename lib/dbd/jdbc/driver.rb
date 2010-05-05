@@ -52,7 +52,7 @@ module DBI::DBD::Jdbc
 
     def connect(dbname, user, auth, attr)
       driverClass = attr["driver"]
-      raise InterfaceError.new('driver class name must be specified as "driver" in connection attributes') unless driverClass
+      raise DBI::InterfaceError.new('driver class name must be specified as "driver" in connection attributes') unless driverClass
 
       load(driverClass)
 

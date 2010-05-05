@@ -28,7 +28,7 @@ Rake::Task['manifest'].invoke # Always regen manifest, so Hoe has up-to-date lis
 
 begin
   require 'hoe'
-  Hoe.new("dbd-jdbc", "0.1.4") do |p|
+  Hoe.new("dbd-jdbc", "0.1.5") do |p|
     p.rubyforge_name = "jruby-extras"
     p.url = "http://github.com/chadj/dbd-jdbc"
     p.author = "Chad Johnson"

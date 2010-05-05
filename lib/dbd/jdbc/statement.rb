@@ -42,7 +42,7 @@ module DBI::DBD::Jdbc
     end
 
     def bind_param(param, value, attribs)
-      raise InterfaceError.new("Statement.bind_param only supports numeric placeholder numbers") unless param.is_a?(Fixnum)
+      raise DBI::InterfaceError.new("Statement.bind_param only supports numeric placeholder numbers") unless param.is_a?(Fixnum)
       if value.nil?
         @statement.setNull(param, @nulltype)
       elsif value.is_a?(String)

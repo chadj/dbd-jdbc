@@ -49,7 +49,7 @@ module DBI
       include_class 'java.util.HashMap'
       include_class 'java.util.Collections'
 
-      VERSION = "0.1.4"
+      VERSION = "0.1.5"
       DESCRIPTION = "JDBC DBD driver for JRuby"
 
       #

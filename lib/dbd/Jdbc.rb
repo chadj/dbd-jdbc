@@ -27,13 +27,6 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 require 'java'
-
-begin
-  require 'rubygems'
-  gem 'dbi'
-rescue LoadError => e
-end
-
 require 'dbi'
 
 module DBI
@@ -49,9 +42,6 @@ module DBI
       include_class 'java.util.HashMap'
       include_class 'java.util.Collections'
 
-      VERSION = "0.1.5"
-      DESCRIPTION = "JDBC DBD driver for JRuby"
-
       #
       # Transaction isolation levels copied from JDBC
       #
@@ -59,14 +49,14 @@ module DBI
       TRANSACTION_READ_COMMITTED = Connection::TRANSACTION_READ_COMMITTED
       TRANSACTION_READ_UNCOMMITTED = Connection::TRANSACTION_READ_UNCOMMITTED
       TRANSACTION_REPEATABLE_READ = Connection::TRANSACTION_REPEATABLE_READ
-      TRANSACTION_SERIALIZABLE = Connection::TRANSACTION_SERIALIZABLE 
+      TRANSACTION_SERIALIZABLE = Connection::TRANSACTION_SERIALIZABLE
       # Convience isolation levels
       NONE = Connection::TRANSACTION_NONE
       READ_COMMITTED = Connection::TRANSACTION_READ_COMMITTED
       READ_UNCOMMITTED = Connection::TRANSACTION_READ_UNCOMMITTED
       REPEATABLE_READ = Connection::TRANSACTION_REPEATABLE_READ
-      SERIALIZABLE = Connection::TRANSACTION_SERIALIZABLE        
-        
+      SERIALIZABLE = Connection::TRANSACTION_SERIALIZABLE
+
       #
       # returns 'Jdbc'
       #

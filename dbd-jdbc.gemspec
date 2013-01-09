@@ -16,6 +16,8 @@ Gem::Specification.new do |gem|
   gem.files             = `git ls-files`.split($/)
   gem.require_paths     = ["lib"]
 
+  gem.add_development_dependency 'rake'
+
   # Not adding dbi as a hard dependency, since either the "real" dbi gem
   # or rails-dbi will work.
   gem.requirements << 'dbi or ruby-dbi gem'

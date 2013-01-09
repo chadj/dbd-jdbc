@@ -27,8 +27,8 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 module DBI::DBD::Jdbc::TypeConversions
-  include_class 'java.util.Calendar'
-  include_class 'java.sql.Types'
+  java_import 'java.util.Calendar'
+  java_import 'java.sql.Types'
 
   def jdbc_to_dbi_sqltype(jdbctype)
     return case jdbctype

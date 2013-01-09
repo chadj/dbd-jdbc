@@ -37,10 +37,10 @@ module DBI
     # Requires DBI and JRuby
     #
     module Jdbc
-      include_class 'java.sql.Connection'
-      include_class 'java.sql.ResultSet'
-      include_class 'java.util.HashMap'
-      include_class 'java.util.Collections'
+      java_import 'java.sql.Connection'
+      java_import 'java.sql.ResultSet'
+      java_import 'java.util.HashMap'
+      java_import 'java.util.Collections'
 
       #
       # Transaction isolation levels copied from JDBC
